@@ -1,0 +1,71 @@
+[
+  {
+    "scenario": "control",
+    "rows": 100,
+    "windows": 15,
+    "alert": null
+  },
+  {
+    "scenario": "terse",
+    "rows": 100,
+    "windows": 15,
+    "alert": {
+      "queries_seen": 35,
+      "metrics": [
+        "response_words",
+        "completion_tokens"
+      ],
+      "alert_latency_ms": 209.2,
+      "channels": [
+        "file",
+        "slack"
+      ]
+    }
+  },
+  {
+    "scenario": "cautious",
+    "rows": 100,
+    "windows": 15,
+    "alert": {
+      "queries_seen": 35,
+      "metrics": [
+        "response_words",
+        "completion_tokens",
+        "hedge_rate"
+      ],
+      "alert_latency_ms": 235.2,
+      "channels": [
+        "file",
+        "slack"
+      ]
+    }
+  },
+  {
+    "scenario": "model_swap",
+    "rows": 100,
+    "windows": 15,
+    "alert": null
+  },
+  {
+    "scenario": "topic_shift",
+    "rows": 64,
+    "windows": 7,
+    "alert": null
+  },
+  {
+    "scenario": "domain_shift",
+    "rows": 68,
+    "windows": 8,
+    "alert": {
+      "queries_seen": 35,
+      "metrics": [
+        "embedding_distance"
+      ],
+      "alert_latency_ms": 174.4,
+      "channels": [
+        "file",
+        "slack"
+      ]
+    }
+  }
+]

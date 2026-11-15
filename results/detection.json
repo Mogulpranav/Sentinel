@@ -1,0 +1,127 @@
+{
+  "baseline_self_check": {
+    "response_words": 0.039194586195352224,
+    "completion_tokens": 0.011511738725894704,
+    "latency_ms": 2.6679407140599687e-11,
+    "hedge_rate": 0.17858668181221732,
+    "refusal": 1.0,
+    "embedding_distance": 0.5486851446031328
+  },
+  "control": {
+    "n_rows": 100,
+    "A_p<0.05": {
+      "windows_flagged": 0,
+      "windows": 15,
+      "first_alert_at": null,
+      "metrics": {}
+    },
+    "B_bonferroni": {
+      "windows_flagged": 0,
+      "windows": 15,
+      "first_alert_at": null,
+      "metrics": {}
+    }
+  },
+  "terse": {
+    "n_rows": 100,
+    "A_p<0.05": {
+      "windows_flagged": 15,
+      "windows": 15,
+      "first_alert_at": 30,
+      "metrics": {
+        "response_words": 15,
+        "completion_tokens": 15,
+        "hedge_rate": 15,
+        "embedding_distance": 4
+      }
+    },
+    "B_bonferroni": {
+      "windows_flagged": 15,
+      "windows": 15,
+      "first_alert_at": 30,
+      "metrics": {
+        "response_words": 15,
+        "completion_tokens": 15,
+        "hedge_rate": 6
+      }
+    }
+  },
+  "cautious": {
+    "n_rows": 100,
+    "A_p<0.05": {
+      "windows_flagged": 15,
+      "windows": 15,
+      "first_alert_at": 30,
+      "metrics": {
+        "response_words": 15,
+        "completion_tokens": 15,
+        "hedge_rate": 13,
+        "refusal": 11
+      }
+    },
+    "B_bonferroni": {
+      "windows_flagged": 15,
+      "windows": 15,
+      "first_alert_at": 30,
+      "metrics": {
+        "response_words": 15,
+        "completion_tokens": 15,
+        "hedge_rate": 10,
+        "refusal": 5
+      }
+    }
+  },
+  "model_swap": {
+    "n_rows": 100,
+    "A_p<0.05": {
+      "windows_flagged": 0,
+      "windows": 15,
+      "first_alert_at": null,
+      "metrics": {}
+    },
+    "B_bonferroni": {
+      "windows_flagged": 0,
+      "windows": 15,
+      "first_alert_at": null,
+      "metrics": {}
+    }
+  },
+  "topic_shift": {
+    "n_rows": 64,
+    "A_p<0.05": {
+      "windows_flagged": 1,
+      "windows": 7,
+      "first_alert_at": 50,
+      "metrics": {
+        "embedding_distance": 1
+      }
+    },
+    "B_bonferroni": {
+      "windows_flagged": 0,
+      "windows": 7,
+      "first_alert_at": null,
+      "metrics": {}
+    }
+  },
+  "domain_shift": {
+    "n_rows": 68,
+    "A_p<0.05": {
+      "windows_flagged": 8,
+      "windows": 8,
+      "first_alert_at": 30,
+      "metrics": {
+        "embedding_distance": 8,
+        "response_words": 3,
+        "completion_tokens": 1
+      }
+    },
+    "B_bonferroni": {
+      "windows_flagged": 8,
+      "windows": 8,
+      "first_alert_at": 30,
+      "metrics": {
+        "embedding_distance": 8
+      }
+    }
+  }
+}
